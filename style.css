@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: #303633;
+    
+}
+
+.container{
+    width: 1000px;
+    height: 600px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
+    /* overflow: scroll; */
+}
+
+.container{
+    display: flex;
+}
+
+.container .left-div{
+    background: url(./images/bg-main-desktop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 600px;
+}
+
+.container .right-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    /* background: yellow; */
+}
+
+.container .right-div div{
+    /* width: 100%; */
+    margin-top: 10px;
+}
+
+.container label{
+    /* background: #000; */
+    display: flex;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.container input{
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(228, 224, 224);
+    outline: none;
+    padding: 0 10px;
+    margin-top: 5px;
+}
+
+#name{
+    letter-spacing: 1px;
+}
+
+
+
+.right-div .input-card-date-detail .input-div input:nth-child(1){
+    width: 70px;
+}
+
+.right-div .input-card-date-detail .input-div input:nth-child(2){
+    width: 70px;
+}
+
+.right-div .input-card-date-detail .input-div input:nth-child(3){
+    width: 150px;
+}
+
+.input-card-date-detail .input-div input{
+    margin-top: 0%;
+}
+
+.btn-confirm {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-confirm button{
+    background: #000;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#exp-YM{
+    margin-right: 60px;
+}
+
+#cvc{
+    margin-left: 9px;
+}
+/* Left side Design */
+.left-div img{
+    width: 250px;
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
+}
+
+.left-div .front-card-view img{
+    position: relative;
+    left: 120px;
+    top: 100px;
+}
+
+.white-circle{
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 140px;
+    top: 120px;
+}
+
+.white-outline-circle{
+    width: 10px;
+    height: 10px;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 175px;
+    top: 125px;
+}
+
+#card-front-number{
+    position: absolute;
+    left: 145px;
+    color: white;
+    letter-spacing: 2.5px;
+    top: 180px;
+}
+
+#holder-name{
+    position: absolute;
+    left: 145px;
+    color: white;
+    letter-spacing: 1px;
+    top: 215px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 6px;
+}
+
+.card-date{
+    display: flex;
+    position: absolute;
+    left: 335px;
+    top: 215px;
+    font-size: 6px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.back-card-view img{
+    position: relative;
+    top: 120px;
+    left: 180px;
+}
+
+#cvc-number{
+    position: absolute;
+    color: rgb(238, 224, 224);
+    font-size: 8px;
+    letter-spacing: 1px;
+    left: 380px;
+    top: 322px;
+    font-weight: bolder;
+}
+
+.right-div span{
+    font-size: 8px;
+    color: red;
+    letter-spacing: 1px;
+}
+
+.input-card-date-detail .lbl-div span{
+    text-transform: uppercase;
+    font-size: 11px;
+    color: black;
+    letter-spacing: 0;
+}
+
+#month-year-error{
+    margin-right: 90px;
+}
+
+/* PopUp */
+.popup{
+    /* border: 1px solid black; */
+    height: 400px;
+    width: 400px;
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    left: 660px;
+    transform: translate(-50%,-50%) scale(.1);
+    visibility: hidden;
+    transition: top .2 ease .1;
+}
+
+.popup-open{
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+}
+
+.popup img{
+    width: 40px;
+    /* margin-bottom: 18px; */
+}
+
+.popup h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 19px auto 10px;
+}
+
+.popup #state-content{
+    font-size: 19px;
+    color: grey;
+}
+
+.popup button{
+    margin: 20px 0;
+    background: black;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
